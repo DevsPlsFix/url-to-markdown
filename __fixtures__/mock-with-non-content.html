@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Comprehensive mock page with non-content elements"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Mock Page With Non-Content Tags</title>
+    <script>
+      (function () {
+        console.log('Inline script should be removed');
+        window.analytics = { track: function () {} };
+      })();
+    </script>
+    <script src="/app.js" defer></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      .banner {
+        background: #333;
+        color: white;
+        padding: 1rem;
+      }
+      /* All style content should be stripped */
+    </style>
+    <noscript>
+      <p>You need JavaScript enabled. This block should be removed.</p>
+    </noscript>
+  </head>
+  <body>
+    <noscript><p>Body noscript should also be removed.</p></noscript>
+    <header>
+      <h1>Site Header (removed)</h1>
+      <p>Navigation and branding here.</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Main Article Title</h2>
+      <p>
+        This is the <strong>main content</strong> that should appear in the
+        markdown output.
+      </p>
+      <p>
+        Second paragraph with <em>emphasis</em> and
+        <a href="https://example.com">a link</a>.
+      </p>
+      <ul>
+        <li>First list item</li>
+        <li>Second list item</li>
+        <li>Third list item</li>
+      </ul>
+      <pre><code>const x = 42;</code></pre>
+    </main>
+    <footer>
+      <p>© 2025 Example Site. Footer content should be removed.</p>
+      <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        console.log('DOM ready - this script is removed');
+      });
+    </script>
+    <style>
+      footer {
+        margin-top: 2rem;
+        border-top: 1px solid #ccc;
+      }
+    </style>
+  </body>
+</html>
